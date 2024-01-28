@@ -29,10 +29,18 @@ public class Cat extends Animal {
     public static void meow(){
         System.out.println("Мяяяу!");
     }
+    //Исключения:
+    public static void fly(){
+        System.out.println("Кошки летать не могут");
+    }
+    public static void swim(){
+        System.out.println("Кошки плавать не могут");
+    }
 
     @Override
     public String toString() {
         return super.toString()+"Discount("+discount+")";
     }
+
     //
 }

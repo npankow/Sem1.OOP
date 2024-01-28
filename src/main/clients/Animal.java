@@ -4,7 +4,8 @@ import java.time.LocalDate;
 
 public class Animal {
 
-    // protected видно в классе и во всех наследниках
+    // protected видно в классе и во всех наследниках. Работает внутри package, поэтому метод Main лежит отдельно всегда
+    // поля класса
     protected String nickName;
     protected Owner owner;
     protected LocalDate birthDate;
@@ -71,6 +72,15 @@ public class Animal {
 
     private void sleep() {
         System.out.println("Животное уснуло!");
+    }
+    public static void toGo() {
+        System.out.println("Животное двигается");
+    }
+    public static void fly() {
+        System.out.println("Животное летает");
+    }
+    public static void swim() {
+        System.out.println("Животное плавает");
     }
 
     @Override

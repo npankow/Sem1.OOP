@@ -18,37 +18,51 @@ public class Main {
 //
 //        System.out.println(cat.getNickName());
 
-        cat.setIllness(new Illness(null));
+//        cat.setIllness(new Illness(null));
 
 //        System.out.println("Болезнь:" + cat.getIllness());
 
 
-        Animal testAnimal = new Animal();
+//        Animal testAnimal = new Animal();
 //        System.out.println(testAnimal.getNickName());
 
 //        cat.lifeCycle();
+//
+//        Animal catty = new Animal();
+//        Dog goodBoy = new Dog();
 
-        Animal catty = new Animal();
-        Dog goodBoy = new Dog();
+//        System.out.println(goodBoy.getType());
+//        System.out.println(catty.getType());
+//
+//        System.out.println(catty);
+//
+//        Cat.meow();
+//
+//        List<Animal> animals = new ArrayList<Animal>();
+//
+//        animals.add(catty);
+//        animals.add(goodBoy);
+//        animals.add(cat);
+        Bird voron = new Bird("Чирик", new Owner("Михаил"),
+                LocalDate.of(2008, 1, 5), new Illness("не летает"));
+        System.out.println(voron.getType());
+        System.out.println("Класс животного: " + voron.getType() + ". " + "Имя животного: " + voron.getNickName());
+        Bird.Action();
+        Fish goldfish = new Fish("Золотая Рыбка", new Owner("Старик"),
+                LocalDate.of(2000,10,10), new Illness("не исполняет желания"));
+        System.out.println("Класс животного: " + goldfish.getType() + ". " + "Имя животного: " + goldfish.getNickName());
+        Cat.fly();
+        Cat.swim();
+        Fish.fly();
 
-        System.out.println(goodBoy.getType());
-        System.out.println(catty.getType());
 
-        System.out.println(catty);
 
-        Cat.meow();
 
-        List<Animal> animals = new ArrayList<Animal>();
-
-        animals.add(catty);
-        animals.add(goodBoy);
-        animals.add(cat);
-
-        int i = 0;
-        for (Animal animal : animals){
-            System.out.println(i + " "+ animal);
-            i++;
+//
+//        int i = 0;
+//        for (Animal animal : animals){
+//            System.out.println(i + " "+ animal);
+//            i++;
         }
 
     }
-}

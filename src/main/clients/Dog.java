@@ -7,7 +7,11 @@ public class Dog extends Animal {
         super(nickName, owner, birthDate, illness); //Сходи в род.класс и вызови 4 параметра
     }
 
-    public Dog(){
+    public Dog() {
         super();
     }
-}
+        //Исключения:
+        public static void fly(){
+            System.out.println("Собаки летать не могут");
+        }
+    }
